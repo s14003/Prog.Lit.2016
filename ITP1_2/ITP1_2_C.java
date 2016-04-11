@@ -1,26 +1,21 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
-class Main{
-    public static void main(String args[]) {
-        Scanner scan = new Scanner(System.in);
+public class ITP1_2_C{
 
-        int a = scan.nextInt();
-        int b = scan.nextInt();
-        int c = scan.nextInt();
+    public static void main(String[] args){
 
-        if (a < b && b < c) {
-            System.out.println(a + " " + b + " " + c);
-        } else if (a < b && c < b && a < c) {
-            System.out.println(a + " " + c + " " + b);
-        } else if (b < a && c < a && b < c) {
-            System.out.println(b + " " + c + " " + a);
-        } else if (b < a && c < a && c < b) {
-            System.out.println(c + " " + b + " " + a);
-        } else if (b < a && a < c ) {
-            System.out.println(b + " " + a + " " + c);
-        } else if (a < b && c < b && c < a) {
-            System.out.println(c + " " + a + " " + b);
-        }
+        Scanner sc = new Scanner(System.in);
 
+        int first = sc.nextInt();
+        int second = sc.nextInt();
+        int third = sc.nextInt();
+
+        int[] sort = {first,second,third};
+
+        Arrays.sort(sort);
+
+        System.out.println(sort[0]+" "+sort[1]+" "+sort[2]);
     }
+
 }
