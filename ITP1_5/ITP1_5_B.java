@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class ITP1_5_A {
+class Main {
     public static void main(String args[]) {
         Scanner scan = new Scanner(System.in);
         StringBuilder sb = new StringBuilder();
@@ -13,9 +13,13 @@ class ITP1_5_A {
             }
             for (int i = 0;i < H; i++) {
                 for (int j = 0;j < W; j++) {
-                    sb.append("#");
+                    if (i == 0 || i == (H - 1) || j == 0||j == (W - 1)) {
+                        sb.append("#");
+                    } else {
+                        sb.append(".");
+                    }
                 }
-                sb.append(".");
+                sb.append("\n");
             }
             sb.append("\n");
         }
