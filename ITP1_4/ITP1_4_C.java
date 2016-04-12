@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main{
+class ITP1_4_C {
     public static void main(String args[]) {
         Scanner scan = new Scanner(System.in);
         StringBuilder sb = new StringBuilder();
