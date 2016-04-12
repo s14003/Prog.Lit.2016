@@ -1,9 +1,9 @@
 import java.util.Scanner;
 import java.math.*;
-class Main {
+class ITP1_4_B {
     public static void main(String args[]) {
         Scanner scan = new Scanner(System.in);
-        int r = scan.nextInt();
+        double r = scan.nextDouble();
 
         double area = Math.PI * r * r;
         double circumference = 2 * Math.PI * r;
