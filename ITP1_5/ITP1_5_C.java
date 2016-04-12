@@ -14,16 +14,16 @@ class ITP1_5_C {
             for (int i = 0;i < H; i++) {
                 for (int j = 0;j < W; j++) {
                     if ((i + j) % 2 == 0 ) {
-                        sb.append(".");
-                    } else {
                         sb.append("#");
+                    } else {
+                        sb.append(".");
                     }
                 }
                 sb.append("\n");
             }
             sb.append("\n");
         }
-        System.out.println(sb);
+        System.out.print(sb);
     }
 
 }
