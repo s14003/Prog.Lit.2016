@@ -11,19 +11,21 @@ class Main {
             if (m == -1 && f == -1 && r == -1) {
                 break;
             }
-            if ((m + f) > 79) {
+            if (m == -1 || f == -1) {
+                sb.append("F").append("\n");
+            } else if(m + f >= 80) {
                 sb.append("A").append("\n");
-            } else if ((m + f) >= 65 && (m + f) <= 79) {
+            } else if (m + f >= 65) {
                 sb.append("B").append("\n");
-            } else if (m + f >= 50 && (m + f) <= 64) {
+            } else if (m + f >= 50) {
                 sb.append("C").append("\n");
-            } else if((m + f) >= 30 && (m + f) <= 49) {
+            } else if (m + f >= 30) {
                 if (r >= 50) {
                     sb.append("C").append("\n");
                 } else {
                     sb.append("D").append("\n");
                 }
-            }   else if (m  + f >= -1 && m + f <= 29)  {
+            } else {
                 sb.append("F").append("\n");
             }
         }
