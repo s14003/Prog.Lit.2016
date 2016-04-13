@@ -12,8 +12,12 @@ class ITP1_4_D {
         int min = 1000000;
         for(int i = 0; i < n; i++){
             a = Integer.parseInt(str[i]);
-            if(a > max) max = a;
-            if(a < min) min = a;
+            if(a > max) {
+                max = a;
+            }
+            if(a < min) {
+                min = a;
+            }
             sum += a;
         }
         System.out.println(min+" "+max+" "+sum);
