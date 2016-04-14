@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Main {
+class ITP1_7_C {
     public static void main(String args[]) {
         Scanner scan = new Scanner(System.in);
 
