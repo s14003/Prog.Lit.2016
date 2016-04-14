@@ -20,6 +20,9 @@ class Main {
         for (int i = 0;i < h + 1;i++) {
             for (int j = 0;j < w + 1;j++) {
                 System.out.print(number[i][j]);
+                if (j == w) {
+                    continue;
+                }
                 System.out.print(" ");
             }
             System.out.println();
