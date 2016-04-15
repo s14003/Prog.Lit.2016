@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main {
+class ITP1_9_D {
     public static void main(String args[]) {
         Scanner scan = new Scanner(System.in);
         String str = scan.nextLine();
