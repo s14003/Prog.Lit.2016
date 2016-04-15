@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main {
+class ITP1_10_B {
     public static void main(String args[]) {
         Scanner scan = new Scanner(System.in);
         StringBuilder sb = new StringBuilder();
@@ -10,7 +10,7 @@ class Main {
         double c = Double.parseDouble(str[2]);
 
         double r = c * Math.PI / 180;
-        double S = (a * b) / 2;
+        double S = a * b * Math.sin(r) / 2;
         double L = a + b + Math.sqrt(a * a + b * b - 2 * a * b * Math.cos(r));
         double h = S * 2 /a;
 
